@@ -6,7 +6,7 @@ import os
 
 BUCKET_NAME = "algolia-backup"
 s3_client = boto3.client("s3")
-client = SearchClient.create('BC4SA39FG5', '93423bf7ae47361625ee676735d541e2')APP_ID = os.environ["APP_ID"]
+APP_ID = os.environ["APP_ID"]
 API_KEY = os.environ["API_KEY"]
 client = SearchClient.create(APP_ID,API_KEY )
 
